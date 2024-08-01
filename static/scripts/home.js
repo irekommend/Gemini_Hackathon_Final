@@ -30,14 +30,27 @@ let loadingInt;
 
 function showLoading() {
   const messages = [
-    "Querying the database...",
-    "Searching the database...",
-    "Retrieving records...",
-    "Fetching database entries...",
-    "Scanning for results...",
-    "Executing database query...",
-    "Compiling search results...",
-  ];
+    "Analyzing query...",
+    "Gathering insights...",
+    "Searching data...",
+    "Compiling answers...",
+    "Fetching information...",
+    "Processing request...",
+    "Retrieving details...",
+    "Generating response...",
+    "Scanning records...",
+    "Building results...",
+];
+
+  // const messages = [
+  //   "Querying the database...",
+  //   "Searching the database...",
+  //   "Retrieving records...",
+  //   "Fetching database entries...",
+  //   "Scanning for results...",
+  //   "Executing database query...",
+  //   "Compiling search results...",
+  // ];
 
   loadingInt = setInterval(() => {
     const randomMessage = messages[Math.floor(Math.random() * messages.length)];
