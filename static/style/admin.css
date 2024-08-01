@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  /* background: var(--color-bg); */
+  overflow: hidden;
+  
+  color: var(--color-white);
+  line-height: 1.7;
+  /* background-image: url(../src/assets/bg-img.jpg); */
+}
+
+.login-wrapper{
+  width: 100%;
+  padding: 10px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  flex-direction: column;
+  background-color: #1d1d41;
+ 
+}
+
+.login_main{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 60vh;
+  margin-top: -50px;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white; 
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 25px; 
+}
+
+.login_head{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:black
+
+}
+
+.login_head p{
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  font-weight: 900 !important;
+}
+
+.login_head h3{
+  font-size: 14px;
+  font-weight: 400;
+  color: #878787;
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+
+.login_form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.inpt_fld{
+  border: 1px solid #878787;
+  height: 52px;
+  width:100%;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #878787;
+  padding: 30px;
+  padding-left: 10px;
+
+}
+
+.inpt_fld:hover{
+  border: 2px solid #01cbbf;
+  cursor: pointer;
+}
+
+
+.inpp{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  width: 100%;
+  
+}
+
+.lbl{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+.forgot_link{
+  margin-top: 10px;
+  margin-left: 180px;
+  color: #019fcb;
+  font-size: 14px;
+  text-wrap: wrap;
+  
+}
+
+.signin_btn{
+  width: 100%;
+  height: 62px;
+  border-radius: 16px;
+  background-color: #1d1d41;
+  font-size: 20px;
+  color: white;
+  margin-top: 3px;
+  transition: 0.3s ease-in;
+}
+
+.signin_btn:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.fancy_style{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+.fancy_style p{
+  font-size: 14px;
+  color: #878787;
+}
+
+.lines{
+  width: 99.5px;
+  height: 1px;
+  background-color: #878787;
+
+}
+
+.google_icn{
+  width: 40px;
+  height: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: 0.3s ease-in;
+}
+
+.google_icn:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.regis{
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.register_link{
+  color: #01cbbf;
+ 
+}
+
+
+.eye_special {
+  
+  position: relative;
+  display: inline-block;
+}
+
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust based on your layout */
+  transform: translateY(-50%);
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+
+/* =====Media Queries (Medium devices)============= */
+@media  screen and (max-width:1024px) {
+    
+  .container{
+      width: var(--container-width-md);
+  }
+  section{
+      margin-top: 6rem;
+  }
+}
+
+/* =====Media Queries (Small devices)============= */
+
+@media  screen and (max-width:600px) {
+  
+  .login_main{
+    width: 100%;
+    height: 65%;
+    border: none !important;
+  }
+
+ 
+  
+}
+
+
+@media  screen and (max-width:450px) {
+  
+  .regis{
+    position: absolute;
+    bottom: 220px;
+  }
+
+  .login-wrapper{
+    background-color: #f2f2f2;
+    /* margin-top: 33%; */
+  }
+
+  .login_main{
+   height: max-content;
+  }
+
+
+ 
+  
+}

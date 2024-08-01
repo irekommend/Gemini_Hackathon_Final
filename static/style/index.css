@@ -1,0 +1,154 @@
+.index_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  overflow: hidden;
+  background-color: transparent;
+  padding: 3rem;
+
+  border-radius: 10px;
+}
+
+.index_head h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #181837;
+}
+
+.main_drop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: dashed;
+  border-color: #c7c8cc;
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+
+
+.main_drop h1{
+  font-weight: 700;
+  font-size: 2rem;
+  color:#181837bc
+}
+.main_drop form{
+  display: flex;
+  flex-direction: column;
+  max-width: 100px;
+
+  gap:10px;
+}
+
+.main_drop form input{
+  display: none;
+}
+
+.drag_img {
+  height: 100px;
+  width: 100px;
+}
+
+.first_para {
+  font-weight: 700;
+  margin-bottom: -10px;
+  color: #758694;
+}
+
+.second_para {
+  color: blue;
+  margin-top: 10px;
+  padding: 0px 20px;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.individual_img {
+  width: 60px;
+  height: 60px;
+}
+
+.browse_btn {
+  padding: 10px 20px;
+  background-color: #1d1d41;
+  color: white;
+  font-weight: 1.1rem;
+  font-size: 1.1rem;
+  border: 1px solid #1d1d41;
+  border-radius: 10px;
+  transition: 0.3s ease-in;
+  margin-top: 20px;
+  /* margin-bottom: 10px; */
+}
+
+.browse_btn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
+
+
+@media (max-width: 1200px) {
+ 
+  .index_head{
+    font-size: 2.5vw;
+  }
+}
+
+
+@media (max-width: 860px) {
+ .index_head{
+  font-size: 3vw;
+ }
+
+ .individual_img {
+  width: 30px;
+  height: 30px;
+}
+}
+
+@media (max-width: 500px) {
+  .index_head{
+    font-size: 4vw;
+    margin-top: 50px;
+  }
+
+  .main_drop {
+    width: 95%;
+  }
+
+
+  .drag_img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .main_drop h1{
+    font-size: 1.2rem;
+  }
+
+  .first_para{
+    font-size: 1rem;
+  }
+
+  .second_para{
+    font-size: 0.7rem;
+  }
+
+  .index_main{
+    padding: 10px;
+    
+  }
+
+  .individual_img {
+    width: 30px;
+    height: 30px;
+  }
+  
+}

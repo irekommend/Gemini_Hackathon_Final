@@ -1,0 +1,121 @@
+.table_main {
+  margin: auto;
+  margin-top: 14vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.table_head  {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1d1d41;
+}
+
+.cross_img {
+  height: 20px;
+  width: 20px;
+}
+
+.break {
+  padding: 1px 400px;
+  background-color: #c7c8cc31;
+}
+
+.table_second {
+  display: flex;
+  gap: 500px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.check {
+  display: flex;
+}
+.check p {
+  font-size: 1.2rem;
+  margin-left: 10px;
+  color: #a9a9a9;
+}
+
+.search_img {
+  height: 40px;
+  width: 40px;
+}
+
+.user_img {
+  height: 70px;
+  width: 70px;
+
+  margin-right: 10px;
+  border: 3px solid #01cbbf;
+  border-radius: 50%;
+}
+
+.table_users {
+  display: flex;
+  gap: 100px;
+  padding: 20px;
+  align-items: center;
+}
+
+.beautify {
+  display: flex;
+}
+
+.name_details {
+  display: flex;
+  flex-direction: column;
+}
+
+.name_details h4 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+.name_details p {
+  color: #b4b4b8;
+}
+
+.checks {
+  margin-top: 35px;
+  margin-right: 7px;
+}
+
+.email p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #01cbbf;
+}
+
+.feedback p {
+  font-size: 1.1rem;
+
+  color: #a9a9a9;
+}
+
+.tr td {
+  word-wrap: break-word;
+  max-width: 300px; /* Adjust this value as needed */
+  white-space: normal;
+}
+
+.card-edit{
+  width: 90%;
+
+}
+
+@media  screen and (max-width:600px) {
+  
+  .table_head{
+    font-size: 1.5rem;
+  }
+
+  .tr > td{
+    max-width:10px ;
+    overflow-wrap: break-word;
+    text-wrap: wrap;
+  }
+  
+}
