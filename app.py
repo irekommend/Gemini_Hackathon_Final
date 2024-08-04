@@ -424,7 +424,7 @@ def login_response():
         return redirect("/")
     
     except:
-        return "Invalid Credentials"
+        return "INVALID_LOGIN_CREDENTIALS"
 
     
 
