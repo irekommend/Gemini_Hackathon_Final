@@ -41,7 +41,7 @@ db = firebase.database()
 
 #Gemini model
 if "GOOGLE_API_KEY" not in os.environ:
-    os.environ["GOOGLE_API_KEY"] = "AIzaSyD45cgmA-bnRFbQejgwHg7NwZNMqtEdvCM"
+    os.environ["GOOGLE_API_KEY"] = "YOUR API KEY"
 
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro-001")
 
