@@ -3,7 +3,6 @@ import uuid
 import os
 from dotenv import load_dotenv
 import pandas as pd
-from langchain_anthropic import ChatAnthropic
 from langchain.chains import LLMChain
 from langchain.chains.constitutional_ai.models import ConstitutionalPrinciple
 from langchain.chains.constitutional_ai.base import ConstitutionalChain
@@ -24,14 +23,14 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 load_dotenv()
 
 config = {
-    "apiKey": "AIzaSyCylgLNzqWSRKfppga7ujIpBgv9GguAdSo",
-    "authDomain": "career-coaching-4c0d4.firebaseapp.com",
-    "databaseURL": "https://career-coaching-4c0d4-default-rtdb.firebaseio.com",
-    "projectId": "career-coaching-4c0d4",
-    "storageBucket": "career-coaching-4c0d4.appspot.com",
-    "messagingSenderId": "294294975343",
-    "appId": "1:294294975343:web:03850126ed507bbab66e9a",
-    "measurementId": "G-BB1KVVM2NV"
+    "apiKey": "YOUR API KEY",
+    "authDomain": "",
+    "databaseURL": "",
+    "projectId": "",
+    "storageBucket": "",
+    "messagingSenderId": "",
+    "appId": "",
+    "measurementId": ""
 }
 
 
@@ -39,10 +38,6 @@ firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
 db = firebase.database()
 
-# For Claude
-# api_key = os.getenv("api_key", "")
-# model_name = os.getenv("model_name", "")
-# llm = ChatAnthropic(temperature=0, anthropic_api_key=api_key, model_name="claude-3-5-sonnet-20240620")
 
 #Gemini model
 if "GOOGLE_API_KEY" not in os.environ:
@@ -422,14 +417,14 @@ def login_response():
     auth = firebase.auth()
 
     # Log the user in
-    # try:
-    user = auth.sign_in_with_email_and_password(email, password)
-    session["user"] = email
-
-    return redirect("/")
+    try:
+        user = auth.sign_in_with_email_and_password(email, password)
+        session["user"] = email
     
-    # except:
-    #     return "Invalid Credentials"
+        return redirect("/")
+    
+    except:
+        return "Invalid Credentials"
 
     
 
