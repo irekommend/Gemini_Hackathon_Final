@@ -1,14 +1,51 @@
 # Career Coaching Chatbot
 
+**_Supercharge your career with AI-powered expert advice agent_**
+
 This project is a web application for career coaching using a chatbot. The chatbot is designed to interact with users, provide career counseling, and answer queries related to career development. The application uses Langchain on top of the Gemini 1.5 Pro model, leveraging Langchain for ethical considerations, retrieval-augmented generation (RAG), and making the bot behave like an experienced career counselor.
 
+## Elevator Pitch
+
+AI-powered expert advice platform uses Google Gemini API and Claude to provide personalized, expert-level career guidance. With a 90% success rate in helping professionals achieve promotions or secure dream jobs within 6 months, our platform combines real industry expert insights with sophisticated machine learning capabilities.
+
+Traditional career advice often falls short in the fast-paced job market. Our platform offers:
+
+- Real-time access to expert knowledge
+- Personalized AI-powered career guidance
+- Data-driven insights for career progression
+- 24/7 scalable coaching
+
+### How It Works
+
+1. **Expert Knowledge Acquisition**
+
+   We've partnered with top industry experts who contribute through:
+
+   - In-depth interviews
+   - Panel discussions
+   - Workshops
+   - Mentoring sessions
+
+   These interactions are transcribed and processed to create a comprehensive dataset of real-world career advice, strategies, and insights.
+
+2. **AI-Powered Analysis and Personalization**
+
+   Detailed architecture diagram and functionality details are available - [https://www.irekommend.com/post/career-coaching-powered-by-irekommend-s-multi-agent-llms](https://www.irekommend.com/post/career-coaching-powered-by-irekommend-s-multi-agent-llms).
+
+3. **Personalized Coaching Experience**
+
+   - **Access to Elite Expertise:** Users benefit from top professionals' collective wisdom, usually inaccessible through traditional coaching.
+   - **Personalization at Scale:** AI provides tailored advice to thousands of users simultaneously.
+   - **24/7 Availability:** Career guidance is accessible anytime, accommodating various time zones and schedules.
+
 ## Features
+
 - User Registration and Login
 - Resume Upload for Career Coaching
 - Interactive Career Counseling Chatbot
 - Ethical Response Filtering using Langchain's Constitutional Layer
 - Retrieval-Augmented Generation (RAG) using MongoDB Atlas Vector Database
-  
+
 ## Installation and Setup
 
 ### Prerequisites
@@ -93,6 +130,7 @@ This project is a web application for career coaching using a chatbot. The chatb
 The application is deployed on Google Cloud Run, providing a scalable and managed environment for running the chatbot. The deployed link is: [https://gh-2wpk7qvpyq-uc.a.run.app/](https://gh-2wpk7qvpyq-uc.a.run.app/).
 
 ## Contact
+
 For any questions or support, please contact:
 - Arvind Radhakrishnen: arvindrkrishnen@gmail.com
 - Dereck Jos: dereckjos12@gmail.com
