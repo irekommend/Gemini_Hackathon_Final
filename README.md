@@ -28,15 +28,28 @@ Traditional career advice often falls short in the fast-paced job market. Our pl
 
    These interactions are transcribed and processed to create a comprehensive dataset of real-world career advice, strategies, and insights.
 
-2. **AI-Powered Analysis and Personalization**
+2. **Career Counselling Bot Architecture**
 
-   Detailed architecture diagram and functionality details are available - [https://www.irekommend.com/post/career-coaching-powered-by-irekommend-s-multi-agent-llms](https://www.irekommend.com/post/career-coaching-powered-by-irekommend-s-multi-agent-llms).
+   - **Multi-Agent System**: The bot uses multiple agents for different tasks.
+   
+   - **First Agent**:
+     - **Task**: Collects input from prompts.
+     - **Content of Prompt**: Includes the user's resume, previous conversations, and a knowledge base (RAG).
+     - **Outcome**: Generates a response based on the provided content.
+       
+   - **Second Agent**:
+     - **Task**: Evaluates the response from the first agent.
+     - **Function**: Ensures the response meets quality criteria; if not, it revises the response.
+     - **Mechanism**: Uses a constitutional chain with a critique and revision process.
+     - **Outcome**: Produces a refined response.
+       
+   - **Model Used**: Both agents utilize Gemini Pro models.
 
 3. **Personalized Coaching Experience**
 
-   - **Access to Elite Expertise:** Users benefit from top professionals' collective wisdom, usually inaccessible through traditional coaching.
-   - **Personalization at Scale:** AI provides tailored advice to thousands of users simultaneously.
-   - **24/7 Availability:** Career guidance is accessible anytime, accommodating various time zones and schedules.
+   - **Access to Elite Expertise**: Users benefit from top professionals' collective wisdom, usually inaccessible through traditional coaching.
+   - **Personalization at Scale**: AI provides tailored advice to thousands of users simultaneously.
+   - **24/7 Availability**: Career guidance is accessible anytime, accommodating various time zones and schedules.
 
 ## Features
 
