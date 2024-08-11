@@ -140,7 +140,11 @@ Traditional career advice often falls short in the fast-paced job market. Our pl
 
 ### Deployment on Google Cloud Run
 
-The application is deployed on Google Cloud Run, providing a scalable and managed environment for running the chatbot. The deployed link is: [https://gh-2wpk7qvpyq-uc.a.run.app/](https://gh-2wpk7qvpyq-uc.a.run.app/).
+The application is deployed on Google Cloud Run, providing a scalable and managed environment for running the chatbot.
+
+- **Deployed URL**: [Google Cloud Run](https://gh-2wpk7qvpyq-uc.a.run.app/)
+- **Domain URL**: [AI Career Coaching](https://ai.irekommend.com/)
+- **Demo Video**: [YouTube Demo](https://youtu.be/2hDsRqqZwc0)
 
 ## Contact
 
